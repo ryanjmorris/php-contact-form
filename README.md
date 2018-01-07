@@ -1,3 +1,31 @@
+# Dealer Inspire PHP Code Challenge Setup
+
+I've uploaded this repo and would like to mention how to get the database setup.
+
+I'm using MySQL for this and have provided the .env file for the mailing client
+and for MySQL's connection for a database named dealerinspire.
+
+## Setting up the database
+
+Creating the database:
+
+(Assuming you've got MySQL configured)
+```
+mysql -u root -p
+
+CREATE DATABASE dealerinspire;
+```
+
+## Setting up the migration
+
+All that is needed is:
+
+```
+php artisan migrate
+```
+
+From here you'll have the necessary database to have this working.
+
 # Dealer Inspire PHP Code Challenge
 
 Welcome to the Dealer Inspire PHP Code challenge. 
