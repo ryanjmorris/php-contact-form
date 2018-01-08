@@ -16,11 +16,17 @@ class ContactController extends Controller
 
     public function postContact(Request $request)
     {
+        if ($request->phone) {
+            $validatePhone = 'numeric|phone';
+        } else {
+            $validatePhone = '';
+        }
+
         $this->validate($request, [
             'full_name' => 'required',
             'email'     => 'required|email',
             'message'   => 'required',
-            'phone'     => 'numeric|phone',
+            'phone'     => $validatePhone,
         ]);
 
         $contact = [

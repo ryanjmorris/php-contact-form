@@ -39,7 +39,7 @@
         <label class="col-sm-3 control-label">(Optional) Phone:</label>
 
         <div class="col-sm-9">
-            <input id="phone" name="phone" class="form-control" placeholder="123-456-7890">
+            <input id="phone" name="phone" class="form-control" placeholder="1234567890">
         </div>
     </div>
 
